@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHT Store - Đẳng Cấp Trên Cổ Tay Bạn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Biến màu thương hiệu */
+        :root {
+            --brand-gold: #C69B56;
+            --brand-red: #e50012;
+        }
+
+        /* Nền & chữ mặc định của trang */
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        /* Các nút mua hàng */
+        .gold-btns .btn-warning {
+            --bs-btn-bg: #C69B56;
+            --bs-btn-border-color: #C69B56;
+            --bs-btn-color: #fff;
+            --bs-btn-hover-bg: #A9803D;
+            --bs-btn-hover-border-color: #A9803D;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-active-bg: #A9803D;
+            --bs-btn-active-border-color: #A9803D;
+            --bs-btn-active-color: #fff;
+        }
+
+        .gold-btns .btn-outline-warning {
+            --bs-btn-color: #C69B56;
+            --bs-btn-border-color: #C69B56;
+            --bs-btn-hover-bg: #C69B56;
+            --bs-btn-hover-border-color: #C69B56;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-active-bg: #C69B56;
+            --bs-btn-active-border-color: #C69B56;
+            --bs-btn-active-color: #fff;
+        }
+
+        /* Khung khuyến mãi */
+        .gold-promo {
+            --bs-warning-rgb: 198, 155, 86;
+            --bs-danger-rgb: 169, 128, 61;
+            --bs-success-rgb: 198, 155, 86;
+            --bs-primary-rgb: 169, 128, 61;
+        }
+
+
+
+        /* Tab: mô tả / bảo hành / hướng dẫn */
+        .nav-tabs-custom .nav-link {
+            color: #444;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: none;
+            border-bottom: 3px solid transparent;
+            font-size: 0.95rem;
+            padding: 12px 20px;
+        }
+
+        .nav-tabs-custom .nav-link.active {
+            color: #000;
+            border-bottom-color: var(--brand-gold);
+            background: transparent;
+        }
+
+        /* Bảng thông số kỹ thuật */
+        .table-spec td {
+            padding: 8px 12px;
+            font-size: 0.85rem;
+        }
+
+        .table-spec tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Nhãn tiêu đề 'Sản phẩm liên quan' */
+        .related-title-badge {
+            background-color: #8b6e4e;
+            color: #fff;
+            padding: 6px 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <!-- TOP BAR -->
+    <div class="bg-dark text-white overflow-hidden d-flex align-items-center marquee-wrapper fs-7 pt-3 pb-3 lh-1">
+        <div class="marquee-track d-flex">
+            <div class="marquee-content d-flex align-items-center flex-shrink-0 text-nowrap">
+                <span class="d-inline-flex align-items-center">🔥 Cam kết chính hãng 100% - Bảo hành lên đến 5 năm!</span>
+                <span class="d-inline-flex align-items-center"><i class="bi bi-telephone-fill"></i> Hotline: 0933.651.698</span>
+            </div>
+            <div class="marquee-content d-flex align-items-center flex-shrink-0 text-nowrap">
+                <span class="d-inline-flex align-items-center">🔥 Đẳng Cấp Trên Cổ Tay Bạn!</span>
+                <span class="d-inline-flex align-items-center"><i class="bi bi-telephone-fill"></i> Hotline: 0933.651.698</span>
+            </div>
+            <div class="marquee-content d-flex align-items-center flex-shrink-0 text-nowrap">
+                <span class="d-inline-flex align-items-center">🔥 Cam kết chính hãng 100% - Bảo hành lên đến 5 năm!</span>
+                <span class="d-inline-flex align-items-center"><i class="bi bi-telephone-fill"></i> Hotline: 0933.651.698</span>
+            </div>
+            <div class="marquee-content d-flex align-items-center flex-shrink-0 text-nowrap">
+                <span class="d-inline-flex align-items-center">🔥 Đẳng Cấp Trên Cổ Tay Bạn!</span>
+                <span class="d-inline-flex align-items-center"><i class="bi bi-telephone-fill"></i> Hotline: 0933.651.698</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-sm sticky-top">
+        <div class="container py-3">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-6 d-flex align-items-center">
+                    <a href="index.html" class="d-inline-flex align-items-center text-decoration-none">
+                        <img src="/New/images/logo.png" alt="NHT Store Logo" class="object-fit-contain"
+                            style="height: 64px; width: auto; max-width: 100%;">
+                    </a>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="input-group search-box border border-2 rounded-pill overflow-hidden">
+                        <input type="text" class="form-control border-0 shadow-none ps-4" placeholder="Tìm kiếm thương hiệu, tên đồng hồ...">
+                        <button class="btn btn-gold text-white" type="button"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex align-items-center justify-content-end gap-3">
+                    <a href="wishlist.html" class="text-danger text-decoration-none d-none d-sm-inline"><i
+                            class="bi bi-heart fs-6"></i>
+                        </a>
+                        <a href="cart.html"
+                            class="btn position-relative d-flex align-items-center justify-content-center p-0"
+                            style="width: 35px; height: 35px;">
+                            <i class="bi bi-cart3"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle mt-1 badge rounded-pill bg-danger">2</span>
+                        </a>
+                        <a href="login.html" class="text-dark text-decoration-none d-none d-sm-inline"><i
+                                class="bi bi-person fs-5"></i> Tài khoản</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-2"><a class="nav-link active text-white" href="index.html">Trang Chủ</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="#">Đồng Hồ Nam</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="#">Đồng Hồ Nữ</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="#">Đồng Hồ Nhật Bản</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="#">Đồng Hồ Thụy Sỹ</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="#">Khuyến Mãi Sốc</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NỘI DUNG CHÍNH: CHI TIẾT SẢN PHẨM -->
+    <main class="container my-4 bg-white p-4 shadow-sm rounded-4">
+
+        <!-- CHI TIẾT SẢN PHẨM PHÍA TRÊN -->
+        <div class="row g-4">
+
+            <!-- HÌNH ẢNH SẢN PHẨM -->
+            <div class="col-md-4 text-center">
+                <div class="position-relative border p-3 rounded-4 bg-white shadow-sm mb-3">
+                    <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                        style="font-size: 11px;">-15%</span> <img
+                        src="https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw7ae57530/product-pictures/280924a1-358f-4f8b-ae0d-6124ebbf2cde_T125-617-37-067-00_shadow.png?sm=fit&sw=1680&sh=1680,gravity=center"
+                        class="img-fluid" alt="Đồng hồ Nam Orient" style="max-height: 380px;">
+                    <span class="badge text-white position-absolute bottom-0 start-0 m-3 fw-normal bg-warning"
+                        style="font-size: 0.75rem;">Special Edition</span>
+                </div>
+                <!-- Nút thao tác phụ bên dưới ảnh -->
+                <div class="d-flex justify-content-center gap-3">
+                    <button class="btn btn-sm btn-outline-secondary d-flex flex-column align-items-center p-2"
+                        style="font-size: 0.75rem;">
+                        <i class="bi bi-file-text fs-5"></i> Thông tin sản phẩm
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary d-flex flex-column align-items-center p-2"
+                        style="font-size: 0.75rem;">
+                        <i class="bi bi-watch fs-5"></i> Hướng dẫn chọn size
+                    </button>
+                </div>
+            </div>
+
+            <!-- THÔNG TIN CHI TIẾT & KHUYẾN MÃI -->
+            <div class="col-md-5">
+                <!-- Logo thương hiệu -->
+                <div class="mb-2">
+                    <img src="https://logos-world.net/wp-content/uploads/2024/10/Tissot-Logo.png" alt="Tissot"
+                        style="height: 35px;">
+                </div>
+
+                <!-- Tên sản phẩm -->
+                <h1 class="fs-5 fw-bold text-uppercase mb-2">Đồng hồ nam Tissot Supersport NBA Special Edition</h1>
+                <h2 class="fs-5 text-uppercase mb-2"> T125.617.37.067.00 (T1256173706700)</h2>
+                <div class="text-secondary small mb-2"><a href="#" class="text-decoration-none text-primary"><i
+                            class="bi bi-plus-circle me-1"></i>So sánh</a></div>
+
+                <!-- Thông số cơ bản -->
+                <div class="small lh-lg mb-3">
+                    <div><strong>Mã sản phẩm:</strong> T1256173706700</div>
+                    <div><strong>Loại máy:</strong> Quartz (Máy pin - điện tử)</div>
+                    <div><strong>Đường kính:</strong> 45.5mm</div>
+                    <div class="text-success fw-bold"><i class="bi bi-check-circle-fill me-1"></i>SẴN HÀNG</div>
+                </div>
+
+                <!-- KHUNG KHUYẾN MÃI -->
+                <div class="gold-promo p-3 border border-warning bg-warning bg-opacity-10 rounded-4 shadow-sm">
+                    <!-- Tiêu đề -->
+                    <h6 class="fw-bold text-danger text-uppercase mb-3">
+                        KHUYẾN MÃI
+                    </h6>
+
+                    <!-- Danh sách các ưu đãi -->
+                    <ul class="list-unstyled mb-0 lh-lg small">
+                        <li class="mb-2 d-flex align-items-start">
+                            <i class="bi bi-check2 text-success fw-bold me-2 mt-1"></i>
+                            <span>Giảm tới <strong class="text-danger">10%</strong> thương hiệu
+                                <strong>Tissot</strong></span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start">
+                            <i class="bi bi-check2 text-success fw-bold me-2 mt-1"></i>
+                            <span>Giảm <strong class="text-danger">40%</strong> trên giá niêm yết khi mua sản phẩm thứ 2
+                                là đồng hồ <a href="casio.html"
+                                    class="text-primary text-decoration-none fw-medium">Casio</a></span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start">
+                            <i class="bi bi-check2 text-success fw-bold me-2 mt-1"></i>
+                            <span>Giảm <strong class="text-danger">25%</strong> trên giá niêm yết khi mua sản phẩm thứ 2
+                                là đồng hồ <a href="#"
+                                    class="text-primary text-decoration-none fw-medium">Titoni</a></span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start">
+                            <i class="bi bi-check2 text-success fw-bold me-2 mt-1"></i>
+                            <span>Giảm <strong class="text-danger">20%</strong> trên giá niêm yết khi mua sản phẩm thứ 2
+                                là đồng hồ <a href="#" class="text-primary text-decoration-none fw-medium">DW</a></span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start">
+                            <i class="bi bi-check2 text-success fw-bold me-2 mt-1"></i>
+                            <span>Giảm <strong class="text-danger">15%</strong> trên giá niêm yết khi mua sản phẩm thứ 2
+                                là đồng hồ <a href="#" class="text-primary text-decoration-none">Longines</a>, <a
+                                    href="#" class="text-primary text-decoration-none">Tissot</a>, <a href="#"
+                                    class="text-primary text-decoration-none">Hamilton</a>, <a href="#"
+                                    class="text-primary text-decoration-none">Mido</a>, <a href="#"
+                                    class="text-primary text-decoration-none">Maurice Lacroix</a>, <a href="#"
+                                    class="text-primary text-decoration-none">Frederique Constant</a>, <a href="#"
+                                    class="text-primary text-decoration-none">Seiko</a></span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-start">
+                            <i class="bi bi-check2 text-success fw-bold me-2 mt-1"></i>
+                            <span>Giảm thêm <strong class="text-danger">5%</strong> <strong>trên mức giá khuyến
+                                    mãi</strong> khi mua sản phẩm thứ 2 thuộc BST mới của <strong>Longines,
+                                    Tissot</strong> (danh sách sản phẩm và mức khuyến mãi chi tiết vui lòng liên hệ nhân
+                                viên bán hàng)</span>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <i class="bi bi-check2 text-success fw-bold me-2 mt-1"></i>
+                            <span>Giảm <strong class="text-danger">20%</strong> khi mua sản phẩm thứ 2 là <a href="#"
+                                    class="text-primary text-decoration-none fw-medium">Đồng Hồ Treo Tường, Để Bàn</a>
+                                có giá niêm yết từ 2 triệu trở lên</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- GIÁ & NÚT MUA HÀNG-->
+            <div class="col-md-3 align-self-start">
+                <!-- Khung giá -->
+                <div class="bg-light p-3 rounded-4 text-center mb-3 border shadow-sm">
+                    <div class="text-muted small text-decoration-line-through">GIÁ: 15.537.000đ</div>
+                    <div class="text-uppercase small fw-bold mt-1">GIÁ KM:</div>
+                    <div class="fs-4 fw-bold text-danger">13.206.450đ</div>
+                    <div class="text-muted" style="font-size: 0.75rem;">(Giá trên đã bao gồm VAT)</div>
+                </div>
+
+                <!-- Các nút đặt hàng -->
+                <div class="d-grid gap-2 mb-4 gold-btns">
+                    <button class="btn btn-warning py-2 shadow-sm fw-bold text-uppercase">
+                        MUA NGAY
+                    </button>
+                    <button class="btn btn-warning opacity-75 py-2 fw-semibold">
+                        TRẢ GÓP QUA THẺ
+                        <small class="d-block fw-normal">Visa, Master, JCB</small>
+                    </button>
+                    <button class="btn btn-outline-warning text-dark py-2">
+                        HƯỚNG DẪN TRẢ GÓP
+                        <small class="d-block">Qua thẻ tín dụng</small>
+                    </button>
+                    <button class="btn btn-dark py-2 fw-bold text-uppercase">
+                        TƯ VẤN MIỄN PHÍ
+                    </button>
+                </div>
+
+                <div class="text-center small mb-4">
+                    <i class="bi bi-telephone-fill text-gold me-1"></i>Hoặc mua hàng qua điện thoại:<br>
+                    <strong class="fs-6 text-gold">093.365.1698</strong>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- THANH CAM KẾT DỊCH VỤ -->
+        <div class="perks-bar py-3 bg-light border rounded-4">
+            <div class="container">
+                <div class="row text-center align-items-center g-3">
+                    <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-patch-check-fill text-gold fs-2 me-2"></i>
+                        <div class="text-start">
+                            <h6 class="mb-0 fw-bold">100%</h6>
+                            <small class="text-muted fw-semibold">Chính Hãng</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-arrow-repeat text-gold fs-2 me-2"></i>
+                        <div class="text-start">
+                            <h6 class="mb-0 fw-bold">Chính Sách</h6>
+                            <small class="text-muted fw-semibold">Đổi Trả</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-tools text-gold fs-2 me-2"></i>
+                        <div class="text-start">
+                            <h6 class="mb-0 fw-bold">Bảo Hành</h6>
+                            <small class="text-muted fw-semibold">Toàn Quốc</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-truck text-gold fs-2 me-2"></i>
+                        <div class="text-start">
+                            <h6 class="mb-0 fw-bold">Miễn Phí</h6>
+                            <small class="text-muted fw-semibold">Vận Chuyển</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--TABS THÔNG TIN CHI TIẾT & THÔNG SỐ KỸ THUẬT -->
+        <div class="mb-5">
+            <ul class="nav nav-tabs nav-tabs-custom justify-content-center mb-4" id="productTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc"
+                        type="button" role="tab">MÔ TẢ CHI TIẾT</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="warranty-tab" data-bs-toggle="tab" data-bs-target="#warranty"
+                        type="button" role="tab">CHẾ ĐỘ BẢO HÀNH</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="guide-tab" data-bs-toggle="tab" data-bs-target="#guide" type="button"
+                        role="tab">HƯỚNG DẪN SỬ DỤNG</button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="productTabContent">
+                <!-- Tab Mô tả chi tiết (Nội dung thông số sản phẩm) -->
+                <div class="tab-pane fade show active" id="desc" role="tabpanel">
+                    <h5 class="fw-bold mb-3 text-uppercase fs-6">THÔNG TIN SẢN PHẨM</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table class="table table-bordered table-spec">
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-bold">Mã sản phẩm:</td>
+                                        <td>T125.617.37.067.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Kiểu dáng:</td>
+                                        <td>Mặt tròn</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Phong cách:</td>
+                                        <td>Thể thao sang trọng</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Đường kính:</td>
+                                        <td>45.5mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Độ dày:</td>
+                                        <td>11.92mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Size dây:</td>
+                                        <td>22mm</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Trọng lượng:</td>
+                                        <td>120g</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Bảo hành chính hãng:</td>
+                                        <td>2 năm quốc tế</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Bảo hành NHT:</td>
+                                        <td>5 năm / Bảo hành Quốc tế; Thay pin miễn phí trọn đời</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="table table-bordered table-spec">
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-bold">Giới tính:</td>
+                                        <td>Nam</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Loại máy:</td>
+                                        <td>Quartz (Máy pin - điện tử)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Mặt kính:</td>
+                                        <td>Sapphire</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Chất liệu vỏ:</td>
+                                        <td>Thép không gỉ 316L</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Chất liệu dây:</td>
+                                        <td>Dây da</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Độ chịu nước:</td>
+                                        <td>100m</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Tính năng khác:</td>
+                                        <td>Vành Bezel Aluminium, Quartz E.O.L. Pin Renata 394</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Màu mặt:</td>
+                                        <td>Đen</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Xuất xứ thương hiệu:</td>
+                                        <td>Thuỵ Sĩ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab Bảo hành -->
+                <div class="tab-pane fade" id="warranty" role="tabpanel">
+                    <p class="small opacity-75">Tất cả đồng hồ mua tại NHT Store đều được bảo hành chính hãng 3 năm quốc
+                        tế và mở rộng bảo hành lên tới 5 năm tại trung tâm kỹ thuật của NHT Store.</p>
+                </div>
+
+                <!-- Tab Hướng dẫn -->
+                <div class="tab-pane fade" id="guide" role="tabpanel">
+                    <p class="small opacity-75">Hạn chế tiếp xúc đồng hồ với hóa chất, chất tẩy rửa. Đảm bảo núm chỉnh
+                        giờ đã được đóng chặt trước khi tiếp xúc với nước.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SẢN PHẨM LIÊN QUAN -->
+        <div class="my-5">
+            <div class="text-center mb-4">
+                <span class="related-title-badge">SẢN PHẨM LIÊN QUAN</span>
+            </div>
+
+            <div id="relatedProductsCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel"
+                data-bs-interval="4000">
+                <div class="carousel-inner px-lg-5">
+
+                    <!-- slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+                            <div class="col">
+                                <div class="card h-100 border-1 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm">
+                                    <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                        style="font-size: 11px;">-13%</span>
+                                    <div class="text-center my-3"><img
+                                            src="https://i.pinimg.com/1200x/0a/19/ee/0a19ee6b2534463a407f3eb63e573237.jpg"
+                                            class="img-fluid product-img object-fit-contain" alt="Tissot T-Race MotoGP 2023"></div>
+                                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                        <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot T-Race MotoGP™
+                                            Limited Edition 2023</p>
+                                        <div class="price-box">
+                                            <div class="text-muted text-decoration-line-through"
+                                                style="font-size: 11px;">19.660.000 đ</div>
+                                            <div class="text-danger fw-bold fs-6">17.104.200 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-1 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm">
+                                    <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                        style="font-size: 11px;">-10%</span>
+                                    <div class="text-center my-3"><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd9T7_PTDXUcuDowP5AKTazxzFBycXxl8i8ZnRIUaTroNVgQSc83A4ohNS&s=10"
+                                            class="img-fluid product-img object-fit-contain" alt="Tissot T-Race Cycling Tour de France">
+                                    </div>
+                                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                        <p class="card-title text-secondary mb-2 product-title overflow-hidden">Đồng hồ nam Tissot
+                                            T-Race Cycling Tour de France Edition</p>
+                                        <div class="price-box">
+                                            <div class="text-muted text-decoration-line-through"
+                                                style="font-size: 11px;">18.200.000 đ</div>
+                                            <div class="text-danger fw-bold fs-6">16.380.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-1 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm">
+                                    <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                        style="font-size: 11px;">-10%</span>
+                                    <div class="text-center my-3"><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3jRQzlJmwPgvb7wFvhSDhSSzg-3JaGZE2tEEdXanG1sBHN2H2Cu2j1s8&s=10"
+                                            class="img-fluid product-img object-fit-contain" alt="Tissot T-Race Cycling Vuelta"></div>
+                                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                        <p class="card-title text-secondary mb-2 product-title overflow-hidden">Đồng hồ nam Tissot
+                                            T-Race Cycling Vuelta Special Edition</p>
+                                        <div class="price-box">
+                                            <div class="text-muted text-decoration-line-through"
+                                                style="font-size: 11px;">17.500.000 đ</div>
+                                            <div class="text-danger fw-bold fs-6">15.750.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-1 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm">
+                                    <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                        style="font-size: 11px;">-30%</span>
+                                    <div class="text-center my-3"><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAnrBuOKnVUxhVQBwDHr97M8T8VaBOMhsPwPwUjew2ja95bNdTD4eLUYE&s=10"
+                                            class="img-fluid product-img object-fit-contain" alt="Tissot T-Race Cycling Special"></div>
+                                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                        <p class="card-title text-secondary mb-2 product-title overflow-hidden">Đồng hồ nam Tissot
+                                            T-Race Cycling Tour de France Special</p>
+                                        <div class="price-box">
+                                            <div class="text-muted text-decoration-line-through"
+                                                style="font-size: 11px;">17.500.000 đ</div>
+                                            <div class="text-danger fw-bold fs-6">12.250.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-1 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm">
+                                    <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                        style="font-size: 11px;">-10%</span>
+                                    <div class="text-center my-3"><img
+                                            src="https://www.hodinarstvibechyne.cz/res/crc-734870814/products/images/1230x1230/trim.20/extend.100.150/6663-a1-t141-417-11-057-00.jpg"
+                                            class="img-fluid product-img object-fit-contain" alt="Tissot T-Race MotoGP Chronograph 2022">
+                                    </div>
+                                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                        <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot T-Race MotoGP
+                                            Chronograph 2022 Limited Edition</p>
+                                        <div class="price-box">
+                                            <div class="text-muted text-decoration-line-through"
+                                                style="font-size: 11px;">22.580.000 đ</div>
+                                            <div class="text-danger fw-bold fs-6">20.322.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+                            <div class="col">
+                                <div class="card h-100 border-1 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm">
+                                    <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                        style="font-size: 11px;">-25%</span>
+                                    <div class="text-center my-3"><img
+                                            src="https://i.pinimg.com/736x/8c/a3/71/8ca371ef57872130ff3093c4923064af.jpg"
+                                            class="img-fluid product-img object-fit-contain" alt="Tissot Gentleman Powermatic 80"></div>
+                                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                        <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot Gentleman
+                                            Powermatic 80</p>
+                                        <div class="price-box">
+                                            <div class="text-muted text-decoration-line-through"
+                                                style="font-size: 11px;">29.430.000 đ</div>
+                                            <div class="text-danger fw-bold fs-6">22.072.500 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-1 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm">
+                                    <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                        style="font-size: 11px;">-25%</span>
+                                    <div class="text-center my-3"><img
+                                            src="https://i.pinimg.com/736x/bc/50/d1/bc50d182dcce743e5551e3f575767c55.jpg"
+                                            class="img-fluid product-img object-fit-contain" alt="Tissot Classic Le Locle"></div>
+                                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                        <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot
+                                            T006.428.16.058.01 Classic Le Locle</p>
+                                        <div class="price-box">
+                                            <div class="text-muted text-decoration-line-through"
+                                                style="font-size: 11px;">23.100.000 đ</div>
+                                            <div class="text-danger fw-bold fs-6">17.325.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-1 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm">
+                                    <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                        style="font-size: 11px;">-10%</span>
+                                    <div class="text-center my-3"><img
+                                            src="https://i.pinimg.com/1200x/dd/12/0b/dd120b65936e3c2caea819203e84bde8.jpg"
+                                            class="img-fluid product-img object-fit-contain" alt="Tissot Chemin Des Tourelles"></div>
+                                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                        <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot Chemin Des
+                                            Tourelles</p>
+                                        <div class="price-box">
+                                            <div class="text-muted text-decoration-line-through"
+                                                style="font-size: 11px;">29.230.000 đ</div>
+                                            <div class="text-danger fw-bold fs-6">26.307.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-1 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm">
+                                    <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                        style="font-size: 11px;">-10%</span>
+                                    <div class="text-center my-3"><img
+                                            src="https://i.pinimg.com/1200x/9e/00/0f/9e000f2922c8d624321f69c0c2f995c4.jpg"
+                                            class="img-fluid product-img object-fit-contain" alt="Tissot PRC 100 Solar Quartz"></div>
+                                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                        <p class="card-title text-secondary mb-2 product-title overflow-hidden">Đồng hồ nam Tissot
+                                            PRC 100 Solar Quartz</p>
+                                        <div class="price-box">
+                                            <div class="text-muted text-decoration-line-through"
+                                                style="font-size: 11px;">16.590.000 đ</div>
+                                            <div class="text-danger fw-bold fs-6">14.931.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100 border-1 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm">
+                                    <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                        style="font-size: 11px;">-5%</span>
+                                    <div class="text-center my-3"><img
+                                            src="https://cdn.hstatic.net/products/1000269795/t152.223.22.036.00_1_2f2b63d83f954a068be9a6076eaf55f5.jpg"
+                                            class="img-fluid product-img object-fit-contain" alt="Tissot Desir Moonphase Quartz"></div>
+                                    <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                        <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot Desir
+                                            Moonphase Quartz</p>
+                                        <div class="price-box">
+                                            <div class="text-muted text-decoration-line-through"
+                                                style="font-size: 11px;">17.180.000 đ</div>
+                                            <div class="text-danger fw-bold fs-6">16.321.000 đ</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nút điều hướng -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#relatedProductsCarousel"
+                    data-bs-slide="prev" style="width: 5%;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Trước</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#relatedProductsCarousel"
+                    data-bs-slide="next" style="width: 5%;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Sau</span>
+                </button>
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="text-light py-5 border-top border-4 border-warning" style="background-color: #2b2b2b !important; font-size: 0.875rem;">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Cột 1: Về chúng tôi -->
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold text-uppercase mb-3 text-warning">VỀ CHÚNG TÔI</h6>
+                    <ul class="list-unstyled lh-lg opacity-75">
+                        <li><a href="#" class="text-light text-decoration-none">Giới thiệu về NHT Store</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Phản ánh - Khiếu nại</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chứng nhận đại lý</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Tin tức công ty</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Top list đồng hồ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Kiến thức đồng hồ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 2: Chính sách chung -->
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold text-uppercase mb-3 text-warning">CHÍNH SÁCH CHUNG</h6>
+                    <ul class="list-unstyled lh-lg opacity-75">
+                        <li><a href="#" class="text-light text-decoration-none">Điều khoản thanh toán</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chính sách bảo hành</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chính sách bảo mật</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chính sách vận chuyển</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chính sách đổi trả</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chính sách về giá</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Thông tin các trang TMĐT</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Hệ thống cửa hàng -->
+                <div class="col-lg-4 col-md-4">
+                    <!-- Miền Bắc -->
+                    <h6 class="fw-bold text-uppercase mb-2 text-warning">CỬA HÀNG MIỀN BẮC</h6>
+                    <ul class="list-unstyled opacity-75 mb-3">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">97 Trần Đại Nghĩa, P.Bạch Mai, Hà Nội</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">58 Trần Đăng Ninh, P.Cầu Giấy, Hà Nội</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                    </ul>
+
+                    <!-- Miền Trung -->
+                    <h6 class="fw-bold text-uppercase mb-2 text-warning">CỬA HÀNG MIỀN TRUNG</h6>
+                    <ul class="list-unstyled opacity-75 mb-3">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">339 Lê Duẩn, P.Thanh Khê, Đà Nẵng</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                    </ul>
+
+                    <!-- Miền Nam -->
+                    <h6 class="fw-bold text-uppercase mb-2 text-warning">CỬA HÀNG MIỀN NAM</h6>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">402B Hai Bà Trưng, P.Tân Định, HCM</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">92 Lê Văn Sỹ, P.Phú Nhuận, HCM</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">61 Quang Trung, P.Gò Vấp, HCM</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">642 CMT8, P.Thủ Dầu Một, HCM (Bình Dương)</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">274 Võ Văn Ngân, P. Bình Thọ, TP.Thủ Đức, HCM</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cột 4: Liên hệ & Trung tâm bảo hành -->
+                <div class="col-lg-3 col-md-12">
+                    <!-- Hotline -->
+                    <h6 class="fw-bold text-uppercase mb-3 text-warning">LIÊN HỆ HỖ TRỢ</h6>
+                    <div class="opacity-75 mb-4 lh-lg">
+                        Hotline 1: 093 189 2222 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-telephone-fill text-warning"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg><br>
+                        Hotline 2: 097 189 3333 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-telephone-fill text-warning"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg><br>
+                        Hotline 3: 096 139 5555 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-telephone-fill text-warning"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg><br>
+                        Email: info@nhtstore.vn <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-envelope text-warning" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                    </div>
+
+                    <!-- Trung tâm bảo hành -->
+                    <h6 class="fw-bold text-uppercase mb-2 text-warning">TRUNG TÂM BẢO HÀNH</h6>
+                    <ul class="list-unstyled opacity-75 mb-4">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">Hà Nội: 97 Trần Đại Nghĩa, P.Bạch Mai, Hà Nội</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">HCM: 92 Lê Văn Sỹ, P.Phú Nhuận, HCM</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                    </ul>
+
+                    <!-- Theo dõi chúng tôi -->
+                    <h6 class="fw-bold text-uppercase mb-3 text-warning">THEO DÕI CHÚNG TÔI TẠI</h6>
+                    <div class="d-flex gap-2 mb-4">
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 35px; height: 35px;"><i class="bi bi-facebook"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 35px; height: 35px;"><i class="bi bi-youtube"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 35px; height: 35px;"><i class="bi bi-tiktok"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 35px; height: 35px;"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

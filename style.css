@@ -1,0 +1,343 @@
+/* BIẾN MÀU & FONT*/
+:root {
+    --bs-body-font-family: 'Roboto', sans-serif;
+    --bs-warning-rgb: 198, 155, 86; 
+}
+
+/* NÚT VÀNG (dùng cùng class .btn) */
+.btn-gold {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #b1935c;
+    --bs-btn-border-color: #b1935c;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #9a7d4a;
+    --bs-btn-hover-border-color: #9a7d4a;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #9a7d4a;
+    --bs-btn-active-border-color: #9a7d4a;
+}
+
+/* Ô TÌM KIẾM TRÊN HEADER */
+.search-box {
+    --bs-border-color: #b1935c;
+}
+
+/* THANH THÔNG BÁO CHẠY (MARQUEE) */
+.marquee-wrapper {
+    height: 38px;
+}
+
+.marquee-track {
+    width: max-content;
+    animation: marquee-scroll 25s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+.marquee-content span {
+    padding-right: 80px;
+}
+
+.marquee-content i {
+    margin-right: 6px;
+}
+
+@keyframes marquee-scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* CUỘN TỚI MỤC SẢN PHẨM NỔI BẬT */
+main#san-pham-noi-bat {
+    scroll-margin-top:
+        80px;
+}
+
+/* THƯƠNG HIỆU NỔI BẬT (thẻ + logo) */
+.brand-card {
+    --bs-border-color: #e5e5e5;
+    height: 80px;
+    transition: all 0.3s ease;
+}
+
+.brand-logo {
+    max-height: 40px;
+    max-width: 85%;
+    filter: grayscale(20%);
+    transition: all 0.3s ease;
+}
+
+.brand-card:hover {
+    transform: translateY(-3px);
+    --bs-border-color: #b1935c;
+    box-shadow: 0 4px 12px rgba(177, 147, 92, 0.2) !important;
+}
+
+.brand-card:hover .brand-logo {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* TIỆN ÍCH CHỮ (chữ đậm, màu vàng) */
+.text-dam {
+    font-weight: 900 !important;
+    -webkit-text-stroke: 1px currentColor;
+}
+
+.text-gold {
+    color: #b1935c !important;
+}
+
+/* BANNER SLIDER: CHẤM CHỈ SỐ */
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 4px;
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #b1935c;
+}
+
+/* TIÊU ĐỀ MỤC SẢN PHẨM NỔI BẬT */
+.section-main-title {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+.title-underline {
+    width: 60px;
+    height: 3px;
+    background-color: #c5a059;
+    margin-top: 8px;
+}
+
+/* SLIDER SẢN PHẨM (cuộn ngang, scroll-snap) */
+.product-slider-container {
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.product-slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-page {
+    scroll-snap-align: start;
+}
+
+/* THẺ SẢN PHẨM (ảnh, tiêu đề, giá) */
+.luxury-card {
+    --bs-border-color: #eee;
+    transition: all 0.3s ease;
+}
+
+.luxury-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+    --bs-border-color: #c5a059;
+}
+
+.product-img {
+    height: 140px;
+    transition: transform 0.3s ease;
+}
+
+.luxury-card:hover .product-img {
+    transform: scale(1.05);
+}
+
+.product-title {
+    font-size: 13px;
+    height: 38px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* NÚT MŨI TÊN TRÁI/PHẢI CỦA SLIDER */
+.slider-nav-btn {
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    color: #333;
+    z-index: 10;
+    transition: all 0.2s ease-in-out;
+}
+
+.slider-nav-btn:hover {
+    background-color: #c5a059;
+    border-color: #c5a059;
+    color: #fff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+    left: -20px !important;
+}
+
+.next-btn {
+    right: -20px !important;
+}
+
+/* TAB LỌC SẢN PHẨM (Nổi bật / Nam / Nữ) */
+.nav-pills .nav-link {
+    color: #333;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #c5a059 !important;
+    border-color: #c5a059 !important;
+    color: #fff !important;
+}
+
+/* BANNER HERO */
+#nhtBannerCarousel {
+    max-height: 600px;
+}
+
+.hero-banner-img {
+    height: 400px;
+}
+
+/* RESPONSIVE: banner trên màn hình nhỏ */
+@media (max-width: 768px) {
+
+    #nhtBannerCarousel,
+    .hero-banner-img {
+        height: 220px;
+    }
+}
+
+/* RESPONSIVE: ô tìm kiếm xuống hàng riêng (dưới lg) */
+@media (max-width: 991.98px) {
+    header .col-lg-6.d-none {
+        display: block !important;
+        order: 3;
+        width: 100%;
+        margin-top: 12px;
+    }
+}
+
+/* RESPONSIVE: nút Tài khoản trên điện thoại (dưới sm) */
+@media (max-width: 575.98px) {
+    header .col-lg-3.text-end>a.d-none {
+        display: inline-block !important;
+        margin-right: 0.75rem !important;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+
+
+/* ============================================================
+   LÀM ĐẸP NHẸ (thêm mới, không thay đổi phần phía trên)
+   ============================================================ */
+
+/* Cuộn mượt khi bấm link neo */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header: đường kẻ mảnh phía dưới */
+header.sticky-top {
+    border-bottom: 1px solid #eee;
+}
+
+/* Ô tìm kiếm: viền sáng vàng khi gõ */
+.search-box:focus-within {
+    box-shadow: 0 0 0 0.2rem rgba(177, 147, 92, 0.25);
+}
+
+/* Menu chính: hover / mục đang chọn có gạch chân vàng */
+.navbar .nav-link {
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #c5a059 !important;
+    border-bottom-color: #c5a059;
+}
+
+/* Thanh chữ chạy: chữ thoáng hơn một chút */
+.marquee-content {
+    letter-spacing: 0.3px;
+}
+
+/* Thẻ sản phẩm / thẻ showroom: bóng nhẹ khi chưa hover */
+.luxury-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Nút lọc tab: hover viền vàng */
+.nav-pills .nav-link:hover:not(.active) {
+    border-color: #c5a059;
+    color: #a9803d;
+}
+
+/* Trang chi tiết: nút mua hàng & nhãn "Sản phẩm liên quan" bo tròn */
+.gold-btns .btn {
+    border-radius: 50rem;
+}
+
+.related-title-badge {
+    border-radius: 50rem;
+    letter-spacing: 0.5px;
+}
+
+/* Footer: link và nút mạng xã hội đổi màu vàng khi hover */
+footer a {
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #c5a059 !important;
+}
+
+footer .btn-outline-light:hover {
+    background-color: #c5a059;
+    border-color: #c5a059;
+    color: #fff !important;
+}
+
+/* Viền focus rõ ràng khi dùng bàn phím */
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #c5a059;
+    outline-offset: 2px;
+}
+
+/* Người dùng tắt hiệu ứng chuyển động -> tắt marquee & hiệu ứng hover */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .marquee-track {
+        animation: none;
+    }
+
+    .luxury-card,
+    .brand-card {
+        transition: none;
+    }
+}

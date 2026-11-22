@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NHT Store - Đẳng Cấp Trên Cổ Tay Bạn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- TOP BAR -->
+    <div class="bg-dark text-white overflow-hidden d-flex align-items-center marquee-wrapper fs-7 pt-3 pb-3">
+        <div class="marquee-track d-flex">
+            <div class="marquee-content d-flex align-items-center flex-shrink-0 text-nowrap">
+                <span class="d-inline-flex align-items-center">🔥 Cam kết chính hãng 100% - Bảo hành lên đến 5 năm!</span>
+                <span class="d-inline-flex align-items-center"><i class="bi bi-telephone-fill"></i> Hotline: 0933.651.698</span>
+            </div>
+            <div class="marquee-content d-flex align-items-center flex-shrink-0 text-nowrap">
+                <span class="d-inline-flex align-items-center">🔥 Đẳng Cấp Trên Cổ Tay Bạn!</span>
+                <span class="d-inline-flex align-items-center"><i class="bi bi-telephone-fill"></i> Hotline: 0933.651.698</span>
+            </div>
+            <div class="marquee-content d-flex align-items-center flex-shrink-0 text-nowrap">
+                <span class="d-inline-flex align-items-center">🔥 Cam kết chính hãng 100% - Bảo hành lên đến 5 năm!</span>
+                <span class="d-inline-flex align-items-center"><i class="bi bi-telephone-fill"></i> Hotline: 0933.651.698</span>
+            </div>
+            <div class="marquee-content d-flex align-items-center flex-shrink-0 text-nowrap">
+                <span class="d-inline-flex align-items-center">🔥 Đẳng Cấp Trên Cổ Tay Bạn!</span>
+                <span class="d-inline-flex align-items-center"><i class="bi bi-telephone-fill"></i> Hotline: 0933.651.698</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="bg-white shadow-sm sticky-top">
+        <div class="container py-3">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-6 d-flex align-items-center">
+                    <a href="index.html" class="d-inline-flex align-items-center text-decoration-none">
+                        <img src="./images/logo.png" alt="NHT Store Logo" class="object-fit-contain"
+                            style="height: 64px; width: auto; max-width: 100%;">
+                    </a>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="input-group search-box border border-2 rounded-pill overflow-hidden">
+                        <input type="text" class="form-control border-0 shadow-none ps-4" placeholder="Tìm kiếm thương hiệu, tên đồng hồ...">
+                        <button class="btn btn-gold text-white" type="button"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex align-items-center justify-content-end gap-3">
+                    <a href="wishlist.html" class="text-danger text-decoration-none d-none d-sm-inline"><i
+                            class="bi bi-heart fs-6"></i>
+                        </a>
+                        <a href="cart.html" class="btn position-relative d-flex align-items-center justify-content-center p-0"
+                            style="width: 35px; height: 35px;">
+                            <i class="bi bi-cart3"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle mt-1 badge rounded-pill bg-danger">2</span>
+                        </a>
+                        <a href="login.html" class="text-dark text-decoration-none d-none d-sm-inline"><i
+                                class="bi bi-person fs-5"></i> Tài khoản</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-2"><a class="nav-link active text-white" href="index.html">Trang Chủ</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="#">Đồng Hồ Nam</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="#">Đồng Hồ Nữ</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="#">Đồng Hồ Nhật Bản</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="#">Đồng Hồ Thụy Sỹ</a></li>
+                    <li class="nav-item px-2"><a class="nav-link text-white" href="#">Khuyến Mãi Sốc</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- BANNER SLIDER (HERO) -->
+    <div id="nhtBannerCarousel" class="carousel slide overflow-hidden" data-bs-ride="carousel" data-bs-interval="3000">
+
+        <!-- Các chấm chỉ số slide ở dưới -->
+        <div class="carousel-indicators mb-2">
+            <button type="button" data-bs-target="#nhtBannerCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#nhtBannerCarousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#nhtBannerCarousel" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Khung chứa ảnh Slider -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Project MindX/images/slider1.png" class="d-block w-100 hero-banner-img object-fit-cover" alt="Luxury Watch Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/Project MindX/images/slider2.png" class="d-block w-100 hero-banner-img object-fit-cover" alt="Luxury Watch Banner 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/Project MindX/images/slider3.png" class="d-block w-100 hero-banner-img object-fit-cover" alt="Luxury Watch Banner 3">
+            </div>
+        </div>
+
+        <!-- Mũi tên điều hướng Trái / Phải -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#nhtBannerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#nhtBannerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Dải 4 Icon Cam Kết (Thanh Trắng phía dưới) -->
+    <div class="perks-bar py-3 bg-white shadow-sm">
+        <div class="container">
+            <div class="row text-center align-items-center g-3">
+                <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                    <i class="bi bi-patch-check-fill text-gold fs-2 me-2"></i>
+                    <div class="text-start">
+                        <h6 class="mb-0 fw-bold">100%</h6>
+                        <small class="text-muted fw-semibold">Chính Hãng</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                    <i class="bi bi-arrow-repeat text-gold fs-2 me-2"></i>
+                    <div class="text-start">
+                        <h6 class="mb-0 fw-bold">Chính Sách</h6>
+                        <small class="text-muted fw-semibold">Đổi Trả</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                    <i class="bi bi-tools text-gold fs-2 me-2"></i>
+                    <div class="text-start">
+                        <h6 class="mb-0 fw-bold">Bảo Hành</h6>
+                        <small class="text-muted fw-semibold">Toàn Quốc</small>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                    <i class="bi bi-truck text-gold fs-2 me-2"></i>
+                    <div class="text-start">
+                        <h6 class="mb-0 fw-bold">Miễn Phí</h6>
+                        <small class="text-muted fw-semibold">Vận Chuyển</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THƯƠNG HIỆU NỔI BẬT -->
+    <main id="san-pham-noi-bat" class="container my-5 pt-3">
+        <h2 class="text-center fw-bold mb-2 text-uppercase">Thương Hiệu Nổi Bật</h2>
+        <div class="title-underline mx-auto mb-4"></div>
+        <div class="row g-3">
+
+            <!-- 1. Casio -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <h2 class="text-dam fs-4 mb-0">CASIO</h2>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 2. Orient -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <img src="https://i.pinimg.com/736x/c1/24/0c/c1240cadbb8fbdbaed72b730a4e8af78.jpg" alt="Orient"
+                            class="brand-logo w-100 object-fit-contain" style="height: 55px;">
+                    </div>
+                </a>
+            </div>
+
+            <!-- 3. Frederique Constant -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <img src="https://i.pinimg.com/1200x/2e/d0/60/2ed06009e886ede5ad2ba42b76eeea5d.jpg"
+                            alt="Frederique Constant" class="brand-logo w-100 object-fit-contain"
+                            style="height: 55px; transform: scale(1.3);">
+                    </div>
+                </a>
+            </div>
+
+            <!-- 4. Rolex -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <img src="https://i.pinimg.com/1200x/9f/c4/1c/9fc41cda2df7557399570fc140cf130a.jpg" alt="Rolex"
+                            class="brand-logo w-100 object-fit-contain" style="height: 55px; transform: scale(1.3);">
+                    </div>
+                </a>
+            </div>
+
+            <!-- 5. Jacob & Co -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <img src="https://i.pinimg.com/1200x/c8/84/68/c88468b81040fa55b56099f6cce9170d.jpg"
+                            alt="Jacob & Co" class="brand-logo w-100 object-fit-contain"
+                            style="height: 55px; transform: scale(1.2);">
+                    </div>
+                </a>
+            </div>
+
+            <!-- 6. Hublot -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <img src="https://i.pinimg.com/1200x/4a/80/1d/4a801dfd288dcf8912edce99de142d91.jpg" alt="Hublot"
+                            class="brand-logo w-100 object-fit-contain" style="height: 55px;">
+                    </div>
+                </a>
+            </div>
+
+            <!-- 7. Seiko -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <img src="https://i.pinimg.com/1200x/a8/5d/dd/a85dddfb330febbf95642235bf0ae603.jpg" alt="Seiko"
+                            class="brand-logo w-100 object-fit-contain" style="height: 55px; transform: scale(1.3);">
+                    </div>
+                </a>
+            </div>
+
+            <!-- 8. Patek Philippe -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <img src="https://i.pinimg.com/1200x/90/e8/7f/90e87f68346d96811d14fa23f24b2e12.jpg"
+                            alt="Patek Philippe" class="brand-logo w-100 object-fit-contain"
+                            style="height: 55px; transform: scale(1.1);">
+                    </div>
+                </a>
+            </div>
+
+            <!-- 9. Richard Mille -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <img src="https://brandlogos.net/wp-content/uploads/2025/02/richard_mille-logo_brandlogos.net_fbdmr.png"
+                            alt="Richard Mille" class="brand-logo w-100 object-fit-contain"
+                            style="height: 55px; transform: scale(2.8);">
+                    </div>
+                </a>
+            </div>
+
+            <!-- 10. Audemars Piguet -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Audemars_Piguet_logo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+                            alt="Audemars Piguet" class="brand-logo w-100 object-fit-contain"
+                            style="height: 55px; transform: scale(1.25);">
+                    </div>
+                </a>
+            </div>
+
+            <!-- 11. Omega -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <img src="https://i.pinimg.com/1200x/fa/3e/df/fa3edf081a8ef6dc366f9a4b27a3dc04.jpg" alt="Omega"
+                            class="brand-logo w-100 object-fit-contain" style="height: 55px; transform: scale(1.55);">
+                    </div>
+                </a>
+            </div>
+
+            <!-- 12. Tissot -->
+            <div class="col-lg-2 col-md-4 col-6">
+                <a href="#" class="brand-card card h-100 text-decoration-none p-3 shadow-sm border rounded-3 bg-white">
+                    <div class="card-body d-flex align-items-center justify-content-center p-0">
+                        <img src="https://logos-world.net/wp-content/uploads/2024/10/Tissot-Logo.png" alt="Tissot"
+                            class="brand-logo w-100 object-fit-contain" style="height: 55px; transform: scale(1.2);">
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- PHẦN SẢN PHẨM NỔI BẬT -->
+    <section class="container my-5 product-showcase-section">
+        <!-- Tiêu đề mục -->
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-uppercase section-main-title text-body">NHỮNG MẪU ĐỒNG HỒ NỔI BẬT</h2>
+            <div class="title-underline mx-auto"></div>
+        </div>
+
+        <!-- Các nút lọc tab -->
+        <ul class="nav nav-pills justify-content-center gap-2 mb-5 border-0" id="productTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link btn btn-sm px-4 rounded-pill fw-semibold active" id="featured-tab"
+                    data-bs-toggle="pill" data-bs-target="#featured-pane" type="button" role="tab">Nổi bật</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link btn btn-sm px-4 rounded-pill fw-semibold" id="men-tab" data-bs-toggle="pill"
+                    data-bs-target="#men-pane" type="button" role="tab">Đồng hồ nam</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link btn btn-sm px-4 rounded-pill fw-semibold" id="women-tab" data-bs-toggle="pill"
+                    data-bs-target="#women-pane" type="button" role="tab">Đồng hồ nữ</button>
+            </li>
+        </ul>
+
+        <!-- Nội dung các Tab -->
+        <div class="tab-content" id="productTabContent">
+
+            <!-- TAB 1: NỔI BẬT -->
+            <div class="tab-pane fade show active" id="featured-pane" role="tabpanel">
+                <div class="position-relative">
+                    <!-- Nút lùi trang - Nổi bật -->
+                    <a href="#featured-page1"
+                        class="slider-nav-btn prev-btn position-absolute top-50 start-0 translate-middle d-none d-lg-flex align-items-center justify-content-center shadow-sm"><i
+                            class="bi bi-chevron-left fs-5"></i></a>
+
+                    <div class="product-slider-container d-flex gap-4 overflow-x-auto pb-4 pt-2">
+                        <!-- Trang 1 - Nổi bật (2 hàng x 5 sản phẩm) -->
+                        <div id="featured-page1" class="slider-page w-100 flex-shrink-0 d-flex flex-column gap-3">
+                            <!-- Hàng 1 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative shadow-sm border rounded-4"
+                                        onclick="window.location.href='detail.html';" role="button">
+                                        <span class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-15%</span>
+                                        <div class="text-center my-3">
+                                            <img src="https://www.tissotwatches.com/dw/image/v2/BKKD_PRD/on/demandware.static/-/Sites-Tissot-Catalogue/default/dw7ae57530/product-pictures/280924a1-358f-4f8b-ae0d-6124ebbf2cde_T125-617-37-067-00_shadow.png?sm=fit&sw=1680&sh=1680,gravity=center"
+                                                class="img-fluid product-img object-fit-contain" alt="Tissot NBA Special Edition">
+                                        </div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden fw-medium">Tissot NBA
+                                                Special Edition</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">15.537.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">13.206.450 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/bc/50/d1/bc50d182dcce743e5551e3f575767c55.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot
+                                                T006.428.16.058.01 Classic Le Locle</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">23.100.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">17.325.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/ea/81/e4/ea81e4dcc331b65daea453eae83d4230.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Casio Edifice
+                                                Efs-s660pb-1ajf Solar Chronograph Watch Jdm Japan</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">7.048.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">5.286.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/19/84/a9/1984a98fe9180a9a2e13f012224bf011.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Seiko Quartz SBTR027
+                                                Spirit Chronograph</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">7.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">5.250.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/12/19/82/1219822e1c53baa47c27545d090f392e.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Seiko 5 Sports GMT
+                                            </p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">15.960.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">11.970.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hàng 2 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/77/82/de/7782de98df0cdc5c875c5ab5a7bdf6c8.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Orient Star
+                                                Contemporary Sakigake</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">28.720.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">25.848.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/a5/2c/ca/a52cca3d50e62620e84d3a9be76e476d.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Orient Bambino
+                                                RA-BB0002S30B</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">9.880.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">7.410.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.luxshopping.vn/Thumnails/Uploads/News/hublot-big-bang-e-fifa-world-cup-qatar-2022-watch-44mm1.png_980_980.webp"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Hublot Big Bang E
+                                                Fifa World Cup Qatar 2022</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">122.380.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">91.785.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://luxuryvip.vn/wp-content/uploads/2020/08/dong-ho-richard-mille-rm11-03-mcl-ca-fq.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Richard Mille
+                                                RM11-03 MCL CA-FQ</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">14.851.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">11.138.250.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://www.hollandwatchgroup.com/pictures/orient-ra-ak0316l30b-stretto-19233536.webp"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Orient Stretto Day
+                                                Night RA-AK0316L30B</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">14.030.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">10.522.500 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 2 - Nổi bật (2 hàng x 5 sản phẩm) -->
+                        <div id="featured-page2" class="slider-page w-100 flex-shrink-0 d-flex flex-column gap-3">
+                            <!-- Hàng 1 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-11%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/f3/0a/90/f30a9079c5cf3f8faa999ebaaced0cff.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">CASIO LTP-V005L-1B
+                                            </p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">847.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">750.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-29%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/ef/d4/c9/efd4c9933553ea62eeefdaf94da8b572.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">CASIO LTP-V004GL-7A
+                                            </p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">1.005.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">840.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-12%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/7d/37/5e/7d375eca7ae4d5137999d48f8bf3e4bb.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">CASIO LTP-V005D-4B2
+                                            </p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">961.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">850.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-8%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/2b/75/95/2b759505e9a1b3809c9fe4c76b80d3a7.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Hublot Big Bang One
+                                                Click King Gold Pave</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">490.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">450.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/37/89/61/3789612ed92a10859e8500249f7d61d2.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Hublot Classic
+                                                Fusion Titanium Deep Blue Diamonds</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">245.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">185.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hàng 2 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-44%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/d0/45/a2/d045a2ad34f7556f4373d63216a2eb4e.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Omega De Ville
+                                                Ladymatic</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">417.900.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">233.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/e7/ca/03/e7ca03490cdd7a9e33103a05ac9a95b6.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Seiko Presage
+                                                Cocktail Lady SRPM06J1</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">19.880.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">14.910.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/99/38/94/99389489ae0865bd904429c24a4952e5.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Seiko Presage
+                                                Cocktail Lady SRE018J1</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">21.280.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">15.960.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-5%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.hstatic.net/products/1000269795/t152.223.22.036.00_1_2f2b63d83f954a068be9a6076eaf55f5.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot Desir
+                                                Moonphase Quartz</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">17.180.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">16.321.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-9%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/b6/3e/3a/b63e3a0d6e1a86fd7f3fd5e3212f3608.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Versace Eon
+                                                Restyling Watch</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">25.800.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">23.500.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nút tiến trang - Nổi bật -->
+                    <a href="#featured-page2"
+                        class="slider-nav-btn next-btn position-absolute top-50 start-100 translate-middle d-none d-lg-flex align-items-center justify-content-center shadow-sm"><i
+                            class="bi bi-chevron-right fs-5"></i></a>
+                </div>
+            </div>
+
+            <!-- TAB 2: ĐỒNG HỒ NAM -->
+            <div class="tab-pane fade" id="men-pane" role="tabpanel">
+                <div class="position-relative">
+                    <!-- Nút lùi trang - Đồng hồ nam -->
+                    <a href="#men-page1"
+                        class="slider-nav-btn prev-btn position-absolute top-50 start-0 translate-middle d-none d-lg-flex align-items-center justify-content-center shadow-sm"><i
+                            class="bi bi-chevron-left fs-5"></i></a>
+
+                    <div class="product-slider-container d-flex gap-4 overflow-x-auto pb-4 pt-2">
+                        <!-- Trang 1 - Đồng hồ nam (2 hàng x 5 sản phẩm) -->
+                        <div id="men-page1" class="slider-page w-100 flex-shrink-0 d-flex flex-column gap-3">
+                            <!-- Hàng 1 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.luxshopping.vn/Thumnails/Uploads/News/hublot-big-bang-e-fifa-world-cup-qatar-2022-watch-44mm1.png_980_980.webp"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Hublot Big Bang E
+                                                Fifa World Cup Qatar 2022</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">122.380.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">91.785.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/63/c8/25/63c82523101776a0a5ff4a18f4f63477.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Seiko 5 Sports
+                                                SRPJ47K1</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">11.480.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">10.332.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/e0/33/fb/e033fbf04cbaa5ff243594b3359e2264.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Seiko Prospex Land
+                                            </p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">39.760.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">35.784.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/01/8e/c5/018ec555bbec42a9c36e4ee6d0d2778c.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden"> Frederique Constant
+                                                Classics Runabout GMT</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">78.660.000₫ đ</div>
+                                                <div class="text-danger fw-bold fs-6">70.794.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-17%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://image.donghohaitrieu.com/wp-content/uploads/2026/05/dong-ho-frederique-constant-classics-moonphase-fc-270sw4p26.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Frederique Constant
+                                                Classics Moonphase</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">39.280.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">32.602.400 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hàng 2 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-17%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://image.donghohaitrieu.com/wp-content/uploads/2026/04/dong-ho-frederique-constant-classics-fc-206s3s5-1.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Frederique Constant
+                                                Classics Moneta Moonphase</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">47.160.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">39.142.800 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-30%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/ab/64/76/ab6476e86d6c0fc1030ca27e9c221192.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Rolex Datejust 41
+                                                Chocolate Diamond Dial Steel</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">610.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">428.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-23%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/84/af/77/84af7772a7dc97534e699a5bbc6f31e4.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Hublot Classic
+                                                Fusion 40 Years Anniversary Black Ceramic</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">245.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">188.800.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-31%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/84/32/49/843249e3ce293a0390029fc0d1d029e2.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Omega Planet Ocean
+                                                Watches</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">180.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">125.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/8c/a3/71/8ca371ef57872130ff3093c4923064af.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot Gentleman
+                                                Powermatic 80</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">29.430.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">22.072.500 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 2 - Đồng hồ nam (2 hàng x 5 sản phẩm) -->
+                        <div id="men-page2" class="slider-page w-100 flex-shrink-0 d-flex flex-column gap-3">
+                            <!-- Hàng 1 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-13%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/0a/19/ee/0a19ee6b2534463a407f3eb63e573237.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot présente la
+                                                T-Race MotoGP™ Édition Limitée 2023</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">19.660.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">17.104.200 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-20%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/ab/54/05/ab54050cd4cf0788d4c4a4a1046ee22b.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Patek Philippe
+                                                Complications 5961R-010</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">1.430.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">1.144.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/21/5c/84/215c847660169911e5802960f2229125.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Orient Men's
+                                                Contemporary Layered 41mm Automatic Watch</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">21.600.0000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">16.200.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/c1/59/2a/c1592a5f31d0785d4e4cf235390b05fd.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Audemars Piguet
+                                                Royal Oak Perpetual Calendar Openworked</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">3.500.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">2.625.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/bb/39/58/bb39588201baaf0711b6ba15e1ec8d52.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Audemars Piguet
+                                                Royal Oak Flying Tourbillon Extra-Thin</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">4.600.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">3.450.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hàng 2 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/4c/12/80/4c12801b3e6b2ac86e53f4cceaf97688.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Jacob &amp; Co. Five
+                                                Time Zone JCM 7</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">34.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">25.500.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-25%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/bf/40/65/bf4065195bef77b2915f76e836512797.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Jacob &amp; Co. Epic
+                                                X Racing</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">710.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">532.500.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-15%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/ca/96/5f/ca965f4807e4b72e1003c2e32d9540ce.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Hublot Orlinski King
+                                                gold</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">540.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">460.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/dd/12/0b/dd120b65936e3c2caea819203e84bde8.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot Chemin Des
+                                                Tourelles</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">29.230.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">26.307.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/9e/00/0f/9e000f2922c8d624321f69c0c2f995c4.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Đồng hồ nam Tissot
+                                                PRC 100 Solar Quartz</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">16.590.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">14.931.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nút tiến trang - Đồng hồ nam -->
+                    <a href="#men-page2"
+                        class="slider-nav-btn next-btn position-absolute top-50 start-100 translate-middle d-none d-lg-flex align-items-center justify-content-center shadow-sm"><i
+                            class="bi bi-chevron-right fs-5"></i></a>
+                </div>
+            </div>
+
+            <!-- TAB 3: ĐỒNG HỒ NỮ -->
+            <div class="tab-pane fade" id="women-pane" role="tabpanel">
+                <div class="position-relative">
+                    <!-- Nút lùi trang - Đồng hồ nữ -->
+                    <a href="#women-page1"
+                        class="slider-nav-btn prev-btn position-absolute top-50 start-0 translate-middle d-none d-lg-flex align-items-center justify-content-center shadow-sm"><i
+                            class="bi bi-chevron-left fs-5"></i></a>
+
+                    <div class="product-slider-container d-flex gap-4 overflow-x-auto pb-4 pt-2">
+                        <!-- Trang 1 - Đồng hồ nữ (2 hàng x 5 sản phẩm) -->
+                        <div id="women-page1" class="slider-page w-100 flex-shrink-0 d-flex flex-column gap-3">
+                            <!-- Hàng 1 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/da/23/d6/da23d6f7d333719ed837ce1f1dc1483c.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot Desir
+                                                T152.207.36.531.00</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">27.260.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">24.534.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/9c/a9/9e/9ca99eb41de16a686561ffb9f6fb1bf1.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot Désir Diamond
+                                                Accent Moonphase</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">15.600.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">14.040.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/79/ff/2a/79ff2acce3381b02d19fa42894261d0f.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot SRV
+                                                T1601103304600 Watch</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">16.790.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">15.111.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/dc/59/7b/dc597b79e4ccc2a18b2626cf753a2393.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Tissot T-Classic
+                                                Ballade Powermatic 48 COSC</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">33.580.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">30.222.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/b7/93/4b/b7934b19abdb9d1ad2699f73b92b6989.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Frederique Constant
+                                                Classics Slimline Ladies Moonphase</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">49.770.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">44.793.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hàng 2 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/a0/36/b0/a036b0f5d9cde0778aa75fdaf3cf1cd8.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Frederique Constant
+                                                Double Heart Beat</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">46.150.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">41.535.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-15%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/27/df/83/27df8397c5940ac6551c27415296d393.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Orient SSZ45003Z0
+                                            </p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">5.450.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">4.632.500 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/66/d4/7b/66d47b67a5bc7463f2a455179aa2a94d.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Seiko Presage
+                                                Classic Series</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">34.720.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">31.248.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-14%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2025/03/dong-ho-nu-rolex-datejust-31-mat-so-hoa-278381rbr-mau-bac-67d3e3cf3e61d-14032025150743.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Rolex Datejust 31
+                                            </p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">800.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">690.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-6%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2024/05/dong-ho-nu-rolex-datejust-dial-278274-coc-da-quang-mau-xanh-bac-664c58af7cb49-21052024151751.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Rolex Datejust Dial
+                                                278274</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">316.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">298.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Trang 2 - Đồng hồ nữ (2 hàng x 5 sản phẩm) -->
+                        <div id="women-page2" class="slider-page w-100 flex-shrink-0 d-flex flex-column gap-3">
+                            <!-- Hàng 1 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-24%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2021/12/dong-ho-nu-hublot-classic-fusion-titanium-deep-blue-diamonds-581-nx-6670-lr-1104-jpn19-33mm-61c3186f97362-22122021192207.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Hublot Classic
+                                                Fusion Titanium Deep Blue Diamonds</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">245.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">185.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-36%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2025/10/dong-ho-nu-seiko-coutura-silver-dial-2-tone-s-steel-women-s-watch-sxgn26-mau-bac-69046e0a7b130-31102025150634.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Seiko Coutura Silver
+                                                Dial 2-Tone S-Steel Women's Watch</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">7.000.000đ</div>
+                                                <div class="text-danger fw-bold fs-6">4.500.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-24%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2025/10/dong-ho-nu-omega-aqua-terra-150m-231-23-34-20-55-001-co-axial-34-mau-trang-vang-hong-6903275b51671-30102025155243.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Omega Aqua Terra</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">190.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">145.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-44%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2022/01/dong-ho-nu-omega-de-ville-ladymat-425-63-34-20-51-002-61e4deadd172d-17012022101245.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Omega De Ville
+                                                Ladymat</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">417.900.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">233.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-7%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2023/04/dong-ho-omega-moonswatch-mission-to-venus-so33p100-mau-kem-hong-6445fedda4786-24042023110029.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Omega MoonSwatch
+                                                Mission To Venus</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">14.500.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">13.500.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Hàng 2 (5 sản phẩm) -->
+                            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-3">
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-28%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.vuahanghieu.com/unsafe/0x500/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2022/02/do-ng-ho-omega-de-ville-prestige-27-4mm-womens-watch-424-53-27-60-55-002-6216f73936ab0-24022022101049.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Omega De Ville
+                                                Prestige</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">227.000.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">164.000.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-15%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/1200x/2a/ef/99/2aef99ed073729af6d14a40c3cf51d2d.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Richard Mille RM 07
+                                            </p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">10.891.421.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">9.257.707.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-10%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/dd/7a/dd/dd7add582cb140b5a9366931bb3c99a7.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Audemars Piguet
+                                                Royal Oak Quartz</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">1.665.441.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">1.498.896.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-20%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://i.pinimg.com/736x/22/c6/16/22c616eba107b40a42391fb4e9ab7ff6.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Casio MDV-10D-1A1VDF
+                                            </p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">3.015.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">2.412.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card h-100 p-3 bg-white luxury-card position-relative border rounded-4 shadow-sm"><span
+                                            class="badge rounded-pill position-absolute top-0 end-0 m-2 px-2 py-1 bg-warning text-white z-2"
+                                            style="font-size: 11px;">-39%</span>
+                                        <div class="text-center my-3"><img
+                                                src="https://cdn.vuanhwatch.com/media/products/23669/dong-ho-casio-nu-sheen-she-3064pgl-5audf-62105f3439548-19022022100836.jpg"
+                                                class="img-fluid product-img object-fit-contain"></div>
+                                        <div class="card-body p-0 d-flex flex-column justify-content-between">
+                                            <p class="card-title text-secondary mb-2 product-title overflow-hidden">Casio Sheen
+                                                SHE-3064PGL-5AUDF</p>
+                                            <div class="price-box">
+                                                <div class="text-muted text-decoration-line-through"
+                                                    style="font-size: 11px;">5.100.000 đ</div>
+                                                <div class="text-danger fw-bold fs-6">3.120.000 đ</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nút tiến trang - Đồng hồ nữ -->
+                    <a href="#women-page2"
+                        class="slider-nav-btn next-btn position-absolute top-50 start-100 translate-middle d-none d-lg-flex align-items-center justify-content-center shadow-sm"><i
+                            class="bi bi-chevron-right fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BANNER GIỚI THIỆU CỬA HÀNG -->
+    <section class="bg-black text-white py-5 my-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <div class="overflow-hidden rounded-4 shadow-lg">
+                        <img src="/Project MindX/images/watch.jpg" class="img-fluid w-100 d-block" alt="Cửa hàng đồng hồ chính hãng">
+                    </div>
+                </div>
+
+                <!-- Logo & Thông tin giới thiệu -->
+                <div class="col-lg-6 text-center text-lg-start ps-lg-5">
+                    <!-- Logo -->
+                    <div class="mb-3">
+                        <img src="/Project MindX/images/logoblack.jpg" alt="NHT Store" class="img-fluid d-inline-block"
+                            style="max-height: 200px;">
+                    </div>
+
+                    <!-- Nội dung giới thiệu -->
+                    <div class="text-light opacity-75 small lh-lg">
+                        <p class="mb-3">
+                            Được thành lập vào năm 2020, trải qua nhiều năm hoạt động và phát triển, chuỗi cửa hàng
+                            Chuyên bán Đồng hồ chính hãng NHT Store trở thành đại lý ủy quyền cho rất nhiều thương hiệu
+                            đến từ Nhật Bản và Thụy Sỹ.
+                        </p>
+                        <p class="mb-3">
+                            Chính sách bảo hành 5 năm cùng với các chương trình giảm giá tốt sẽ giúp bạn mua sắm dễ
+                            dàng. Với đội ngũ nhân viên tận tình, am hiểu kiến thức, NHT Store rất vui được phục vụ quý
+                            khách.
+                        </p>
+                        <p class="mb-0">
+                            NHT Store hứa sẽ hoàn thiện hơn mỗi ngày để mang đến trải nghiệm tuyệt vời nhất có thể cho
+                            mọi khách hàng. Chúc quý khách mọi điều tốt lành!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DANH SÁCH SHOWROOM CỬA HÀNG -->
+    <section class="container my-5 py-4">
+        <h3 class="text-center fw-bold text-dark mb-2" style="font-size: 1.5rem;">
+            Danh Sách Cửa hàng Đồng hồ NHT Store 8 Showroom
+        </h3>
+        <div class="title-underline mx-auto mb-4"></div>
+
+        <!-- Lưới 8 Showroom -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- Showroom 1 -->
+            <div class="col">
+                <div class="card luxury-card h-100 border rounded-4 overflow-hidden shadow-sm bg-light">
+                    <div class="card-header border-bottom-0 py-3 bg-transparent fw-bold text-dark fs-6">
+                        NHT Store Trần Đại Nghĩa <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                    </div>
+                    <div class="card-body bg-white pt-2">
+                        <p class="card-text text-secondary small mb-3">
+                            97 Trần Đại Nghĩa, P.Bạch Mai, Hà Nội
+                        </p>
+                        <a href="#" class="text-decoration-none small text-gold fw-medium">Xem chỉ đường</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Showroom 2 -->
+            <div class="col">
+                <div class="card luxury-card h-100 border rounded-4 overflow-hidden shadow-sm bg-light">
+                    <div class="card-header border-bottom-0 py-3 bg-transparent fw-bold text-dark fs-6">
+                        NHT Store Trần Đăng Ninh <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                    </div>
+                    <div class="card-body bg-white pt-2">
+                        <p class="card-text text-secondary small mb-3">
+                            58 Trần Đăng Ninh, P.Cầu Giấy, Hà Nội
+                        </p>
+                        <a href="#" class="text-decoration-none small text-gold fw-medium">Xem chỉ đường</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Showroom 3 -->
+            <div class="col">
+                <div class="card luxury-card h-100 border rounded-4 overflow-hidden shadow-sm bg-light">
+                    <div class="card-header border-bottom-0 py-3 bg-transparent fw-bold text-dark fs-6">
+                        NHT Store Đà Nẵng <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                    </div>
+                    <div class="card-body bg-white pt-2">
+                        <p class="card-text text-secondary small mb-3">
+                            339 Lê Duẩn, P.Thanh Khê, Đà Nẵng
+                        </p>
+                        <a href="#" class="text-decoration-none small text-gold fw-medium">Xem chỉ đường</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Showroom 4 -->
+            <div class="col">
+                <div class="card luxury-card h-100 border rounded-4 overflow-hidden shadow-sm bg-light">
+                    <div class="card-header border-bottom-0 py-3 bg-transparent fw-bold text-dark fs-6">
+                        NHT Store Bình Dương <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                    </div>
+                    <div class="card-body bg-white pt-2">
+                        <p class="card-text text-secondary small mb-3">
+                            642 CMT8, P.Thủ Dầu Một, HCM (Bình Dương)
+                        </p>
+                        <a href="#" class="text-decoration-none small text-gold fw-medium">Xem chỉ đường</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Showroom 5 -->
+            <div class="col">
+                <div class="card luxury-card h-100 border rounded-4 overflow-hidden shadow-sm bg-light">
+                    <div class="card-header border-bottom-0 py-3 bg-transparent fw-bold text-dark fs-6">
+                        NHT Store Lê Văn Sỹ <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                    </div>
+                    <div class="card-body bg-white pt-2">
+                        <p class="card-text text-secondary small mb-3">
+                            92 Lê Văn Sỹ, P.Phú Nhuận, HCM
+                        </p>
+                        <a href="#" class="text-decoration-none small text-gold fw-medium">Xem chỉ đường</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Showroom 6 -->
+            <div class="col">
+                <div class="card luxury-card h-100 border rounded-4 overflow-hidden shadow-sm bg-light">
+                    <div class="card-header border-bottom-0 py-3 bg-transparent fw-bold text-dark fs-6">
+                        NHT Store Quang Trung <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                    </div>
+                    <div class="card-body bg-white pt-2">
+                        <p class="card-text text-secondary small mb-3">
+                            61 Quang Trung, P.Gò Vấp, HCM
+                        </p>
+                        <a href="#" class="text-decoration-none small text-gold fw-medium">Xem chỉ đường</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Showroom 7 -->
+            <div class="col">
+                <div class="card luxury-card h-100 border rounded-4 overflow-hidden shadow-sm bg-light">
+                    <div class="card-header border-bottom-0 py-3 bg-transparent fw-bold text-dark fs-6">
+                        NHT Store Hai Bà Trưng <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                    </div>
+                    <div class="card-body bg-white pt-2">
+                        <p class="card-text text-secondary small mb-3">
+                            402B Hai Bà Trưng, P.Tân Định, HCM
+                        </p>
+                        <a href="#" class="text-decoration-none small text-gold fw-medium">Xem chỉ đường</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Showroom 8 -->
+            <div class="col">
+                <div class="card luxury-card h-100 border rounded-4 overflow-hidden shadow-sm bg-light">
+                    <div class="card-header border-bottom-0 py-3 bg-transparent fw-bold text-dark fs-6">
+                        NHT Store Võ Văn Ngân <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                    </div>
+                    <div class="card-body bg-white pt-2">
+                        <p class="card-text text-secondary small mb-3">
+                            274 Võ Văn Ngân, P. Bình Thọ, Thủ Đức, HCM
+                        </p>
+                        <a href="#" class="text-decoration-none small text-gold fw-medium">Xem chỉ đường</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="text-light py-5 small border-top border-4 border-warning" style="background-color: #2b2b2b !important;">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Cột 1: Về chúng tôi -->
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold text-uppercase mb-3 text-warning">VỀ CHÚNG TÔI</h6>
+                    <ul class="list-unstyled lh-lg opacity-75">
+                        <li><a href="#" class="text-light text-decoration-none">Giới thiệu về NHT Store</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Phản ánh - Khiếu nại</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chứng nhận đại lý</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Tin tức công ty</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Top list đồng hồ</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Kiến thức đồng hồ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 2: Chính sách chung -->
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold text-uppercase mb-3 text-warning">CHÍNH SÁCH CHUNG</h6>
+                    <ul class="list-unstyled lh-lg opacity-75">
+                        <li><a href="#" class="text-light text-decoration-none">Điều khoản thanh toán</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chính sách bảo hành</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chính sách bảo mật</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chính sách vận chuyển</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chính sách đổi trả</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Chính sách về giá</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Thông tin các trang TMĐT</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Hệ thống cửa hàng -->
+                <div class="col-lg-4 col-md-4">
+                    <!-- Miền Bắc -->
+                    <h6 class="fw-bold text-uppercase mb-2 text-warning">CỬA HÀNG MIỀN BẮC</h6>
+                    <ul class="list-unstyled opacity-75 mb-3">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">97 Trần Đại Nghĩa, P.Bạch Mai, Hà Nội</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">58 Trần Đăng Ninh, P.Cầu Giấy, Hà Nội</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                    </ul>
+
+                    <!-- Miền Trung -->
+                    <h6 class="fw-bold text-uppercase mb-2 text-warning">CỬA HÀNG MIỀN TRUNG</h6>
+                    <ul class="list-unstyled opacity-75 mb-3">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">339 Lê Duẩn, P.Thanh Khê, Đà Nẵng</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                    </ul>
+
+                    <!-- Miền Nam -->
+                    <h6 class="fw-bold text-uppercase mb-2 text-warning">CỬA HÀNG MIỀN NAM</h6>
+                    <ul class="list-unstyled opacity-75">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">402B Hai Bà Trưng, P.Tân Định, HCM</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">92 Lê Văn Sỹ, P.Phú Nhuận, HCM</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">61 Quang Trung, P.Gò Vấp, HCM</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">642 CMT8, P.Thủ Dầu Một, HCM (Bình Dương)</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">274 Võ Văn Ngân, P. Bình Thọ, TP.Thủ Đức, HCM</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cột 4: Liên hệ & Trung tâm bảo hành -->
+                <div class="col-lg-3 col-md-12">
+                    <!-- Hotline -->
+                    <h6 class="fw-bold text-uppercase mb-3 text-warning">LIÊN HỆ HỖ TRỢ</h6>
+                    <div class="opacity-75 mb-4 lh-lg">
+                        Hotline 1: 093 189 2222 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-telephone-fill text-warning"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg><br>
+                        Hotline 2: 097 189 3333 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-telephone-fill text-warning"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg><br>
+                        Hotline 3: 096 139 5555 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-telephone-fill text-warning"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg><br>
+                        Email: info@nhtstore.vn <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-envelope text-warning" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                    </div>
+
+                    <!-- Trung tâm bảo hành -->
+                    <h6 class="fw-bold text-uppercase mb-2 text-warning">TRUNG TÂM BẢO HÀNH</h6>
+                    <ul class="list-unstyled opacity-75 mb-4">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">Hà Nội: 97 Trần Đại Nghĩa, P.Bạch Mai, Hà Nội</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-1 text-warning"></i>
+                            <span class="fst-italic">HCM: 92 Lê Văn Sỹ, P.Phú Nhuận, HCM</span>
+                            <div class="small text-light ms-3">Mở cửa: 8h30 - 22h00 | <a href="#" class="text-light">chỉ
+                                    đường</a></div>
+                        </li>
+                    </ul>
+
+                    <!-- Theo dõi chúng tôi -->
+                    <h6 class="fw-bold text-uppercase mb-3 text-warning">THEO DÕI CHÚNG TÔI TẠI</h6>
+                    <div class="d-flex gap-2 mb-4">
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 35px; height: 35px;"><i class="bi bi-facebook"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 35px; height: 35px;"><i class="bi bi-youtube"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 35px; height: 35px;"><i class="bi bi-tiktok"></i></a>
+                        <a href="#"
+                            class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center p-0"
+                            style="width: 35px; height: 35px;"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
